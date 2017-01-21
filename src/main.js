@@ -1,11 +1,19 @@
-console.log('Hello World!');
-import React from 'react';
-import ReactDOM from 'react-dom';
-import Counter from './Counter';
+var React = require('react');
+var ReactDOM = require('react-dom');
  
-document.addEventListener('DOMContentLoaded', function() {
-  ReactDOM.render(
-    React.createElement(Counter),
-    document.getElementById('mount')
-  );
-});
+ReactDOM.render(
+	<div className='mainContainer'>
+		<div className='navbar navbar-default navbar-fixed-top'>
+			<div className='container-fluid'>
+				<a className='navbar-brand' href='#'>Panels</a>			
+
+			</div>
+		</div>
+		<div className='container'>
+			<h1>content</h1>
+		</div>
+
+
+	</div>,
+	document.getElementById('app')
+	)
