@@ -3,7 +3,7 @@ var path = require('path');
 var config = {
   context: path.join(__dirname, 'app'),
   entry: [
-    './app.js',
+    '/app.js',
   ],
   output: {
     path: path.join(__dirname, 'public'),
