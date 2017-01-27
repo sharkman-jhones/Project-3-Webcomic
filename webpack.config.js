@@ -1,32 +1,24 @@
 var path = require('path');
  
-var config = {
-  context: path.join(__dirname, 'app'),
-  entry: [
-    '/app.js',
-  ],
+module.exports = {
+  entry: './app/app.js',
+
   output: {
-    path: path.join(__dirname, 'public'),
-    filename: 'bundle.js',
+    filename: 'public/bundle.js'
   },
+
   module: {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /node_modules/,
-        loaders: ['babel'],
-      },
-    ],
+        include: /app/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015']
+        }
+      }
+    ]
   },
-  resolveLoader: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
-  resolve: {
-    root: [
-      path.join(__dirname, 'node_modules'),
-    ],
-  },
+
+  devtool: "eval-source-map"
 };
-module.exports = config;

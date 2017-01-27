@@ -1,10 +1,5 @@
 var React = require('react');
 
-var ReactRouter = require('react-router');
-var Router = ReactRouter.Router;
-var Route = ReactRouter.Route;
-var IndexRoute = ReactRouter.IndexRoute;
-
 var Main = React.createClass({
 	render: function(){
 		return(
@@ -18,7 +13,7 @@ var Main = React.createClass({
 					<h1>Main Content</h1>
 				</div>
 			</div>
-		)
+		);
 	}
 
 });
