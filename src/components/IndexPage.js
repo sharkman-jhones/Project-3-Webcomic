@@ -8,7 +8,7 @@ export default class IndexPage extends React.Component {
 	render() {
 		return (
 			<div className='home'>
-				<div className = 'comic-selector'>
+				<div className = 'comic-selector col-lg-12'>
 					{comics.map(comicData => <ComicsPreview key={comicData.id} {...comicData} />)}
 				</div>
 			</div>

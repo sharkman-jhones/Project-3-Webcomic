@@ -6,14 +6,15 @@ export default class Layout extends React.Component{
 		return(
 			<div className = "app-container">
 				<header>
+						<nav className='navbar navbar-default navbar-fixed-top'>
+							<div className='container'>
 					<Link to='/'>
-						<a href='#'>Thing</a>
+						<a href='#' className='navbar-brand'>Panels</a>
 					</Link>
+							</div>
+						</nav>
 				</header>
 				<div className='app-content'>{this.props.children}</div>
-				<footer>
-					<p>This is a demo to try and build this page</p>
-				</footer>
 			</div>
 			);
 	}

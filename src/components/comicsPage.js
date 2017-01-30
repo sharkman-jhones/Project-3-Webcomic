@@ -12,19 +12,19 @@ export default class ComicsPage extends React.Component{
 		}
 		return (
 			<div className='container'>
-				<div className='row'>
+				<div className='row col-lg-12'>
 					<div className='comic-full'>
 						<div className='description'>
 							{comics.summary}
 						</div>
 						<div className='pic-container'>
-							<img src={`/img/${comic.image[0]}`}/>
+							<img className='col-lg-12 col-md-12 col-sm-12 col-xs-12' src={`/img/${comic.image[0]}`}/>
 							<h2 className='name'>{comic.name}</h2>
 							<p className>{comic.summary}</p>
 						</div>
 					</div>
 				</div>
-				<div className='row'>
+				<div className='row col-lg-12'>
 					<div className='navigator-buttons'>
 						<button type='button' className='btn btn-default' id='com-nav-first'>First</button>
 						<button type='button' className='btn btn-default' id='com-nav-prev'>Previous</button>
