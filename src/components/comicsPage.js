@@ -18,9 +18,9 @@ export default class comicsPage extends React.Component{
 					<img src={`/img/$comic.image`}/>
 					<h2 className='name'>{comic.name}</h2>
 				</div>
-				<section className='description'>
+				<div className='description'>
 					{comics.summary}
-				</section>
+				</div>
 			</div>
 		);
 	}

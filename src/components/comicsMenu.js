@@ -5,7 +5,7 @@ import comics from '../data/comics';
 export default class comicsMenu extends React.Component {
 	render(){
 		return(
-			<nav className='Comics-menu'>
+			<nav className='comics-menu'>
 				{comics.map(menuComic => {
 					return <Link key={menuComic.id} to={`/comic/${menuComic.id}`} activeClassName='active'>
 						{menuComic.name}

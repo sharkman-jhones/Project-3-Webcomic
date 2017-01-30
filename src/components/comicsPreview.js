@@ -10,7 +10,6 @@ export default class comicsPreview extends React.Component {
 					<h2 className='name'>{this.props.name}</h2>
 				</div>
 			</Link>
-
-			)
+		);
 	}
 }
