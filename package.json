@@ -4,8 +4,7 @@
   "description": "A webpage using ReactJS and express images for sorting albums of images into comics",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=production node_modules/.bin/babel-node --presets 'react,es2015' src/server.js"
   },
   "author": "Armando Morales",
   "license": "ISC",
