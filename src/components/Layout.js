@@ -11,6 +11,9 @@ export default class Layout extends React.Component{
 								<Link to='/'>
 									<a href='#' className='navbar-brand'>Panels</a>
 								</Link>
+								<Link to='/upload'>
+									<button className='btn btn-default'>Upload</button>
+								</Link>
 							</div>
 						</nav>
 				</header>
